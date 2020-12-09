@@ -14,13 +14,14 @@
  * 1 - в інших випадках.
  */
 
+typedef struct scan scan;
 double homeWork(double x, double y);
 
 int main() {
 
-    double x, y;
+    float x, y;
     printf("Please, enter X, Y: ");
-    scanf("%d%d", &x, &y);
+    scanf("%f%f", &x,&y);
     printf("Result = %d", homeWork(x, y));
 
     return 0;
@@ -35,7 +36,7 @@ double homeWork(double x, double y) {
     } else if (y == 0) {
         res = pow(x, 2);
     } else {
-        res = 1;
+        res = 1.0;
     }
     return res;
 }

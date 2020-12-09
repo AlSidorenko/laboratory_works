@@ -8,34 +8,16 @@
 
 typedef struct scan scan;
 
-double classWork(double, double, double);
 double homeWork(double a, double b);
 
 int main() {
-    /*
-    // classWork
-    double x, y, z;
-    printf("Please, enter X, Y and Z\n");
-
-    scanf("%d%d%d", &x,&y,&z);
-    printf("%d", classWork(x,y,z));
-     */
-
     //homeWork
-    double a,b;
+    float a,b;
     printf("Please, enter A, B: ");
-    scanf("%d%d", &a,&b);
+    scanf("%f%f", &a,&b);
     printf("Result = %d", homeWork(a,b));
 
     return 0;
-}
-
-/*
- * (x^2 - 0.1z + sqrt(2.5*y^2))/(3.7x^2 + (cos(y))^2)
- */
-double classWork(double x, double y, double z) {
-    double res = (pow(x, 2) - (0.1 * z) + sqrt(2.5 * y * y)) / (3.7 * x * x + (pow(cos(y), 2)));
-    return res;
 }
 
 /*
