@@ -3,10 +3,10 @@ project(laboratory_works_ASD C)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCES_1 lab_001/laboratory_01.c)
-set(SOURCES_2 lab_002/laboratory_02.c)
-set(SOURCES_3 lab_003/laboratory_03.c)
+    #Lab_003_Binary_Trees
+set(Binary_Trees lab_003_Binary_Trees/binary_tree.c)
+add_executable(binary_tree ${Binary_Trees})
 
-add_executable(laboratory_01 ${SOURCES_1})
-add_executable(laboratory_02 ${SOURCES_2})
-add_executable(laboratory_03 ${SOURCES_3})
+    #Lab_004_Linked_list
+set(Linked_list lab_004_Linked_List/linked_list.c)
+add_executable(linked_list ${Linked_list})
